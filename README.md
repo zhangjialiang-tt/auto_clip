@@ -22,7 +22,9 @@
 无需额外安装任何库（Python 标准库即可）：
 
 ```bash
-python app.py
+# 进入 src 目录运行
+cd src
+python main.py
 ```
 
 ### 2. 打包为 EXE
@@ -34,9 +36,9 @@ python app.py
    pip install pyinstaller
    ```
 
-2. 执行打包命令:
+2. 执行打包命令 (在项目根目录):
    ```bash
-   pyinstaller --noconsole --onefile --name="AntiLock" app.py
+   pyinstaller --noconsole --onefile --clean --name="AntiLock" src/main.py
    ```
 
 3. 在 `dist` 目录下找到 `AntiLock.exe` 即可运行。
